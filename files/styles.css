@@ -1,0 +1,149 @@
+/* General Body and HTML Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Ensures text uses a clean, modern font */
+    font-size: 19px;
+}
+
+/* Header Styling */
+header {
+    background-color: rgb(50, 87, 171) ;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+h1 {
+    background-color: rgb(134, 168, 246); /* Sets the background color */
+    color: white; /* Sets the text color to white for better contrast */
+    padding: 10px; /* Adds space around the text inside the <h1> */
+    text-align: center; /* Centers the text */
+}
+
+
+/* Navigation Styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Main Content Layout using Flexbox */
+.content {
+    display: flex;
+    padding: 20px;
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+}
+
+/* Photo Styling */
+.photo {
+    flex: 1;
+    text-align: center; /* Center the photo within the div */
+    padding: 10px;
+}
+
+.photo img {
+    width: 100%; /* Adjust depending on desired size, ensure it's responsive */
+    max-width: 300px; /* Limits how large the image can grow */
+}
+
+/* Link Section Styling */
+.links {
+    flex: 2;
+    text-align: left; /* Align the text of the links to the left */
+    padding: 10px;
+}
+
+.links h3 {
+    margin-top: 0;
+}
+
+.links p, .links a {
+    margin-bottom: 10px;
+}
+
+/* Styling for Individual Links */
+.links a {
+    display: block; /* Makes each link its own line */
+    color: #0077b5; /* LinkedIn blue for related links */
+    text-decoration: none; /* No underline */
+}
+
+.links a:hover {
+    text-decoration: underline; /* Underline on hover for better interaction feedback */
+}
+
+/* FontAwesome Icon Styling */
+.fa-linkedin {
+    font-size: 14px; /* Size of the FontAwesome icon */
+    color: #0077b5; /* LinkedIn brand color */
+    vertical-align: middle; /* Aligns the icon vertically with adjacent text */
+}
+.icon-container {
+    display: flex;
+    align-items: center; /* This centers the icons vertically */
+    justify-content: space-around; /* This adds space around the items */
+}
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Stack photo and links vertically on small screens */
+    }
+
+    .photo, .links {
+        flex: none;
+        width: 100%;
+        text-align: center;
+    }
+}
+.container {
+    display: flex;
+    align-items: start; /* Aligns items at the top of the container */
+    gap: 0px; /* Adds space between the left and right sections */
+}
+
+.left-section, .right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-section {
+    align-items: center; /* Centers content horizontally */
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+}
+
+.left-section img {
+    width: 100%; /* Makes the image responsive */
+    max-width: 250px; /* Limits the size of the image */
+    margin-bottom: 10px; /* Space between the image and the text below */
+}
+
+h3, p {
+    margin: 0 0 10px 0; /* Spacing for heading and paragraph */
+}
+.project-entry {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px; /* Space between each project entry if you have multiple */
+}
+
+.project-title, .project-date {
+    margin-right: 10px; /* Adds space to the right of the project title */
+}
